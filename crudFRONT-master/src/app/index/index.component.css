@@ -1,0 +1,8 @@
+base{
+    background: url("../img/intro-01-1920x955.jpg") no-repeat center center fixed;
+    /*background:#1B2631;https://aron.7arbides.com/assets/img/login.jpg*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

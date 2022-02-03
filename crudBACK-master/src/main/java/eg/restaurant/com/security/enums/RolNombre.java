@@ -1,0 +1,5 @@
+package eg.restaurant.com.security.enums;
+
+public enum RolNombre {
+	ROLE_ADMIN,ROLE_USER
+}

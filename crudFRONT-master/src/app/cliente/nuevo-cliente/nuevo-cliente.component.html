@@ -1,0 +1,42 @@
+<app-menu></app-menu>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre"
+                    [(ngModel)]="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido"
+                    [(ngModel)]="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipodocumento">tipodocumento</label>
+                    <select class="form-control" id="tipodocumento" name="tipodocumento" [(ngModel)]="tipodocumento" required>
+                        <option value="DNI">DNI</option>
+                        <option value="C/E">CARNET DE EXTRANJERIA</option>
+
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="numerodocumento">numerodocumento</label>
+                    <input type="text" class="form-control" id="numerodocumento" name="numerodocumento"
+                    [(ngModel)]="numerodocumento" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">correo</label>
+                    <input type="text" class="form-control" id="correo" name="correo"
+                    [(ngModel)]="correo" required>
+                </div>
+
+                <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">Crear</button>
+            </form>
+        </div>
+    </div>
+</div>
+<br><br>
